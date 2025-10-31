@@ -44,10 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 suffixIcon: Icon(Icons.visibility_off , color: AppColors.whiteColor,),
               ) ,
               SizedBox(),
-              Container(
-                width: double.infinity,
-                child:Text(AppLocalizations.of(context)!.forget_password , style: AppStyles.regular14RobotoYellow, textAlign: TextAlign.end,),
-              )
+
             ],
           ),
         ),
