@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             AppRoutes.loginScreen: (context) => const LoginScreen(),
           },
           initialRoute: AppRoutes.onBoardingScreen,
-          locale: const Locale("ar"),
+          locale: const Locale("en"),
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
           builder: (context, widget) {

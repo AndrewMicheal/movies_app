@@ -22,5 +22,8 @@ class AssetsManager {
   static const String iconIdentification = "assets/images/iconIdentification_.png";
   static const String iconPhone = "assets/images/iconPhone.png";
   static const String iconBookmark = "assets/images/iconBookmark.png";
+
+  static const String americaIcon = "assets/images/america_icon.png";
+  static const String egyptIcon = "assets/images/EG.png";
   
 }
