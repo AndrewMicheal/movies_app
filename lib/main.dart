@@ -4,6 +4,7 @@ import 'package:mymovies/l10n/app_localizations.dart';
 import 'package:mymovies/login/login_screen.dart';
 import 'package:mymovies/on_boarding_screen/on_boarding_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mymovies/register/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
           routes: {
             AppRoutes.onBoardingScreen: (context) => const OnBoardingScreen(),
             AppRoutes.loginScreen: (context) => const LoginScreen(),
+            AppRoutes.registerScreen: (context) => const RegisterScreen()
           },
-          initialRoute: AppRoutes.onBoardingScreen,
-          locale: const Locale("ar"),
+          initialRoute: AppRoutes.registerScreen,
+          locale: const Locale("en"),
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
           builder: (context, widget) {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mymovies/core/app_colors.dart';
-import 'package:mymovies/core/app_styles.dart';
 
 class CustomElevatedButtom extends StatelessWidget {
   final VoidCallback onPressed;

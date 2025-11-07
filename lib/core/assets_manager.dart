@@ -8,7 +8,7 @@ class AssetsManager {
   static const String onBoardingImage6 = "assets/images/startWatchImage.png";
 
   static const String avatarImage1 = "assets/images/avaterImage1.png";
-  static const String avatarImage2 = "asset/images/avaterImage2.png";
+  static const String avatarImage2 = "assets/images/avaterImage2.png";
   static const String avatarImage3 = "assets/images/avatarImage3.png";
 
   static const String emptyListImage = "assets/images/Empty.png";
@@ -22,5 +22,8 @@ class AssetsManager {
   static const String iconIdentification = "assets/images/iconIdentification_.png";
   static const String iconPhone = "assets/images/iconPhone.png";
   static const String iconBookmark = "assets/images/iconBookmark.png";
+
+  static const String americaIcon = "assets/images/america_icon.png";
+  static const String egyptIcon = "assets/images/EG.png";
   
 }
