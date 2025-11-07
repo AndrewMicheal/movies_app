@@ -40,7 +40,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
           },
         ),
 
-        title: Text("Register", style: AppStyles.regular16RobotoYellow),
+        title: Text(AppLocalizations.of(context)!.register, style: AppStyles.regular16RobotoYellow),
+
         centerTitle: true,
         backgroundColor: AppColors.nearBlack,
       ),
@@ -73,19 +74,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
               const SizedBox(height: 12),
 
-              // CircleAvatar(
-              //   radius: 60,
-              //   backgroundImage: AssetImage(avatars[selectedAvatarIndex]),
-              // ),
-
-              // const SizedBox(height: 5),
               Text("Avatar", style: AppStyles.regular16RobotoWhite),
 
               const SizedBox(height: 10),
 
               CustomTextFormField(
                 controller: nameController,
-                hintText: "Name",
+                hintText: AppLocalizations.of(context)!.name,
                 prefixIcon: Image.asset(AssetsManager.iconIdentification),
               ),
               SizedBox(height: size.height * 0.02),
@@ -111,7 +106,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               SizedBox(height: size.height * 0.02),
               CustomTextFormField(
                 controller: re_passwordController,
-                hintText: "Confirm Password",
+                hintText: AppLocalizations.of(context)!.confirmPassword,
                 prefixIcon: Image.asset(AssetsManager.iconPassword),
                 suffixIcon: Icon(
                   Icons.visibility_off,
@@ -121,7 +116,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               SizedBox(height: size.height * 0.02),
               CustomTextFormField(
                 controller: phoneController,
-                hintText: "Phone Number",
+                hintText: AppLocalizations.of(context)!.phoneNumber,
                 prefixIcon: Image.asset(AssetsManager.iconPhone),
               ),
               SizedBox(height: size.height * 0.02),
@@ -129,7 +124,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 width: double.infinity,
                 child: CustomElevatedButtom(
                   onPressed: () {},
-                  text: 'Create Account',
+                  text: AppLocalizations.of(context)!.createAccount,
                   textStyle: AppStyles.regular20RobotoDarkGrey,
                 ),
               ),
@@ -142,11 +137,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Already Have Account ? ",
+                      "${AppLocalizations.of(context)!.alreadyHaveAccount}? ",
                       style: AppStyles.regular14RobotoWhite,
                     ),
                     Text(
-                      'Login',
+                      AppLocalizations.of(context)!.login,
                       style: AppStyles.bold14RobotoYellow,
                     ),
                   ],
