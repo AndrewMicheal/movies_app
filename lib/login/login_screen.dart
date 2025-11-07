@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mymovies/core/app_colors.dart';
+import 'package:mymovies/core/app_routes.dart';
 import 'package:mymovies/core/app_styles.dart';
 import 'package:mymovies/core/assets_manager.dart';
 import 'package:mymovies/core/widgets/custom_elevated_buttom.dart';
@@ -38,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SizedBox(height: size.height * 0.02),
               CustomTextFormField(
-                controller: emailController,
+                controller: passwordController,
                 hintText: AppLocalizations.of(context)!.password,
                 prefixIcon: Image.asset(AssetsManager.iconPassword),
                 suffixIcon: Icon(
@@ -60,14 +61,18 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 width: double.infinity,
                 child: CustomElevatedButtom(
-                  onPressed: () {},
+                  onPressed: () {
+
+                  },
                   text: AppLocalizations.of(context)!.login,
                   textStyle: AppStyles.regular20RobotoDarkGrey,
                 ),
               ),
               SizedBox(height: size.height * 0.02),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.registerScreen);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

@@ -8,7 +8,7 @@ class AssetsManager {
   static const String onBoardingImage6 = "assets/images/startWatchImage.png";
 
   static const String avatarImage1 = "assets/images/avaterImage1.png";
-  static const String avatarImage2 = "asset/images/avaterImage2.png";
+  static const String avatarImage2 = "assets/images/avaterImage2.png";
   static const String avatarImage3 = "assets/images/avatarImage3.png";
 
   static const String emptyListImage = "assets/images/Empty.png";
