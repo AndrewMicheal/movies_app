@@ -44,7 +44,7 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: obscureText,
-      obscuringCharacter: obscuringCharacter ?? ".",
+      obscuringCharacter: obscuringCharacter ?? "*",
       validator: validator,
       style: TextStyle(
         color: textColor ?? AppColors.whiteColor

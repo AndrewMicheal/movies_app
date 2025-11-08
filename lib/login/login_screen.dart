@@ -18,6 +18,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  bool isSelected = false;
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -38,12 +39,30 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SizedBox(height: size.height * 0.02),
               CustomTextFormField(
-                controller: emailController,
+                controller: passwordController,
                 hintText: AppLocalizations.of(context)!.password,
                 prefixIcon: Image.asset(AssetsManager.iconPassword),
-                suffixIcon: Icon(
-                  Icons.visibility_off,
-                  color: AppColors.whiteColor,
+                obscureText: !isSelected ? true : false ,
+                suffixIcon: !isSelected ? InkWell(
+                  onTap: () {
+                    setState(() {
+                      isSelected = !isSelected;
+                    });
+                  },
+                  child: Icon(
+                    Icons.visibility_off,
+                    color: AppColors.whiteColor,
+                  ),
+                ) : InkWell(
+                  onTap: () {
+                    setState(() {
+                      isSelected = !isSelected;
+                    });
+                  },
+                  child: Icon(
+                    Icons.visibility,
+                    color: AppColors.whiteColor,
+                  ),
                 ),
               ),
               SizedBox(height: size.height * 0.02),
